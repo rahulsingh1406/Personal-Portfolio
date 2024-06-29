@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="x-icon" href="./images/TCI (2)-modified.png">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/201baeec91.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./images/logo1.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            Hi, I'm <span>Rahul</span><br />
+            Singh From India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-------------------About Section------------------>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/Rahul's image.png" alt="User Image" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="about-para">
+              Welcome to my portfolio! I'm Rahul Singh, a passionate software
+              engineer dedicated to crafting elegant solutions to complex
+              problems. I have honed my skills in HTML, CSS, JavaScript,
+              Bootstrap, C, Java, Python, SQL, and Git. My journey in software
+              engineering began with a fascination for technology and a drive to
+              create impactful applications that enhance user experiences and
+              streamline processes.
+            </p>
+            <div class="tab-titles">
+              <div class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </div>
+              <div class="tab-links" onclick="openTab('experience')">
+                Projects
+              </div>
+              <div class="tab-links" onclick="openTab('education')">
+                Education
+              </div>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Designing Web and
+                  Web-Application.
+                </li>
+                <li>
+                  <span>Front End Technologies</span><br />HTML, CSS, JS, and
+                  Bootstrap.
+                </li>
+                <li>
+                  <span>Programming Languages</span><br />C, Java, JavaScript,
+                  and Python.
+                </li>
+                <li><span>DBMS</span><br />Oracle and MySQL.</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Lane Detection</span><br />Developed a model for lane
+                  detection application for vehicles, complete with <br />
+                  a testing framework, using the Python programming language and
+                  its libraries <br />such as NumPy, Matplotlib, and CV2.
+                </li>
+                <li>
+                  <span>Amazon Clone</span><br />Developed a replica of the
+                  Amazon website using HTML and CSS, focusing on <br />
+                  creating a visually appealing.
+                </li>
+                <li>
+                  <span>MoveIt Website</span><br />Developed a fully responsive
+                  landing page for MoveIt Website, an online service <br />
+                  platform, using HTML, CSS, JavaScript, and Bootstrap.
+                </li>
+                <li>
+                  <span>Personal Porfolio</span><br />Designed and developed a
+                  personal portfolio website to showcase my skills,<br />
+                  projects, and professional experience.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Sharma Computer Academy
+                  (SCA).
+                </li>
+                <li>
+                  <span>B.Tech</span><br />Sagar Institute of Research &
+                  Technology (SIRT).
+                </li>
+                <li>
+                  <span>Class 12th</span><br />Elite Higher Secondary School,
+                  Bhopal.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------------------Service Section------------------------------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Website Design</h2>
+            <p class="service-para">
+              Looking to create a stunning and functional website? I specialize
+              in building exceptional websites tailored to your needs. Whether
+              it's for your business, portfolio, or personal blog, I deliver
+              professional and aesthetically pleasing designs that captivate
+              your audience and enhance your online presence. Let's bring your
+              vision to life with a website that stands out and performs
+              seamlessly.
+            </p>
+            <a href="https://www.geeksforgeeks.org/web-development/"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Portfolio Design</h2>
+            <p class="service-para">
+              I specialize in creating outstanding portfolios that showcase your
+              work and achievements beautifully. With a focus on professional
+              and visually appealing designs, I help you present your skills and
+              experiences in the most compelling way possible. Whether you're an
+              artist, designer, writer, or professional in any field, I'll craft
+              a portfolio that highlights your strengths and leaves a lasting
+              impression. Let's work together to create a portfolio that truly
+              reflects your talent and sets you apart.
+            </p>
+            <a
+              href="https://clarke.edu/academics/careers-internships/student-checklist/resume-writing-and-portfolios/what-is-a-portfolio/"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>Resume Design</h2>
+            <p class="service-para">
+              I specialize in crafting exceptional resumes that highlight your
+              skills, experience, and achievements. With a keen eye for detail
+              and a commitment to excellence, I design resumes that make a
+              powerful first impression and help you stand out in a competitive
+              job market. Whether you're starting your career, making a change,
+              or aiming for a higher position, I create personalized resumes
+              that effectively showcase your unique strengths and
+              qualifications.
+            </p>
+            <a href="https://myfuture.com/career/creating-your-resume"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------Portfolio------------------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/moveIt.png" alt="Work image" />
+            <div class="layer">
+              <h3>MoveIt Website</h3>
+              <p>
+                A moving service platform was developed using HTML, CSS,
+                JavaScript, and Bootstrap to create this fully responsive
+                website.
+              </p>
+              <a href="https://moveit-website.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/amazon.png" alt="Work image" />
+            <div class="layer">
+              <h3>Amazon clone</h3>
+              <p>
+                This is a desktop website that has been cloned from Amazon using
+                HTML and CSS.
+              </p>
+              <a href="https://amazon-clone-by-rahul.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/tinDog.png" alt="Work image" />
+            <div class="layer">
+              <h3>TinDog Website</h3>
+              <p>
+                The TinDog website is modeled after the Tinder website, which
+                was created specifically for the dog community.
+              </p>
+              <a href="https://tindog-website-tinder.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- ------------------contact--------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              rahulsingh14062003@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 7440525515</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/_rahul_singh_rajput/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/rahul-singh-4385a822a"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="./images/Rahul's Resume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <div class="name-phoneno">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Name"
+                  class="input-name"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="Phone number"
+                  placeholder="Phone number"
+                  class="input-phone"
+                  required
+                />
+              </div>
+              <input type="email" name="Email" placeholder="Email *" required />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Comment"
+              ></textarea>
+              <button type="submit" onclick="printMsg()" class="btn btn2">
+                Submit
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          <a href="" class="rahul-singh-1"
+            >copyright <i class="fa-regular fa-copyright"></i> Rahul. Made by
+            <a href="" class="rahul-singh">Rahul Singh</a></a
+          >
+        </p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function openTab(tabName) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycby3p7UR--0mQtvM9s8Wa23BEHhwB0FKX1jsIO4DFakpbFsyDdzuj5ONb_nIvtgCsHltbA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script>
+      msg = document.getElementById("msg");
+      function printMsg() {
+        msg.innerHTML = "Message sent successfully!";
+        setTimeout(function () {
+          msg.innerHTML = "";
+          form.reset();
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>
